@@ -1,0 +1,6 @@
+TerminalWindow .notebook .button,
+TerminalWindow .notebook .button:active {
+    padding: 0;
+    background-image: none;
+    border: 0;
+}
