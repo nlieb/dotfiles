@@ -18,6 +18,7 @@
 (global-set-key (kbd "C-x <down>")  'windmove-down)
 
 (setq x-select-enable-clipboard t)
+(setq reb-re-syntax 'string)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
