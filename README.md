@@ -22,3 +22,8 @@ Installed using `gnome-tweak-tool`. Each title is a Tweak Tool sidebar section:
 - Interface `Consolas Regular 12`
 - Documents `Sans Regular 11`
 - Monospace `Consolas Regular 13`
+
+#### Disable annoying 1080ti LEDs
+```
+nvidia-settings --assign GPULogoBrightness=0
+```
