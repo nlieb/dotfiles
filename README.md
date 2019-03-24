@@ -27,3 +27,18 @@ Installed using `gnome-tweak-tool`. Each title is a Tweak Tool sidebar section:
 ```
 nvidia-settings --assign GPULogoBrightness=0
 ```
+
+#### Disable NIC leds
+https://pwmon.org/p/1900/quest-disable-lan-leds-intel-nuc/
+
+Summary:
+
+- Kernel Module Instructions: https://www.intel.com/content/www/us/en/support/articles/000005480/network-and-i-o/ethernet-products.html
+- Download: https://downloadcenter.intel.com/download/15817
+
+```
+sudo modprobe -r e1000e
+sudo modprobe e1000e
+sudo ethtool -E enp0s31f6 magic 0x15b88086 offset 0x30 value 0xa5
+sudo ethtool -E enp0s31f6 magic 0x15b88086 offset 0x31 value 0x14
+```
